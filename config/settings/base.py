@@ -265,7 +265,9 @@ ACCOUNT_FORMS = {"signup": "basketball_league_tracker.users.forms.UserSignupForm
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 SOCIALACCOUNT_ADAPTER = "basketball_league_tracker.users.adapters.SocialAccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/forms.html
-SOCIALACCOUNT_FORMS = {"signup": "basketball_league_tracker.users.forms.UserSocialSignupForm"}
+SOCIALACCOUNT_FORMS = {
+    "signup": "basketball_league_tracker.users.forms.UserSocialSignupForm"
+}
 
 
 # Your stuff...
