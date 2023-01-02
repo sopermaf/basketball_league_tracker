@@ -14,6 +14,9 @@ runserver:
 make-migration:
 	docker-compose -f $(COMPOSE_FILE) run --rm django python manage.py makemigrations
 
+django-command:
+	docker-compose -f local.yml run --rm django python manage.py $(command)
+
 test:
 	docker-compose -f $(COMPOSE_FILE) run django pytest --disable-warnings
 
