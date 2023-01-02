@@ -73,7 +73,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "basketball_league_tracker.users",
-    # Your stuff: custom apps go here
+    "league",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
