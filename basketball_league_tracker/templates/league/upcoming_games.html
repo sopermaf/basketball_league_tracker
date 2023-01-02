@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Upcoming Games</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+        </tr>
+    {% for game in upcoming_games%}
+        <tr>
+            <td>{{ game.when }}</td>
+            <td>{{ game.home_team }}</td>
+            <td>{{ game.away_team }}</td>
+        </tr>
+    {% empty %}
+        No games
+    {% endfor %}
+    </table>
+
+{% endblock %}
