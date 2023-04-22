@@ -114,7 +114,7 @@ exclude = [
     "node_modules",
     "venv",
 ]
-per-file-ignores = {}
 
-# Same as Black.
-line-length = 88
+[tool.ruff.per-file-ignores]
+"config/wsgi.py" = ["ERA001"]
+"docs/conf.py" = ["ERA001"]
